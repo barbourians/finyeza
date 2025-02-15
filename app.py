@@ -58,7 +58,7 @@ def redirect_url(short_code):
     doc = doc_ref.get()
 
     if not doc.exists:
-        return render_template('index.html', error="Short URL not found")
+        return render_template('404.html'), 404
 
     long_url = doc.to_dict()['long_url']
     return redirect(long_url)
