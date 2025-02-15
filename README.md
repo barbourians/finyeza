@@ -51,10 +51,12 @@ This will launch your live Hello World Flask app! 🎉
 ### testing
 - `gcloud app browse`
 - `curl https://<PROJECT_ID>.appspot.com/`
-
+- `gcloud app logs tail -s default`
 
 ### trying to fix permissions
 - `gcloud storage buckets list --filter="name:staging.<PROJECT_ID>.appspot.com"`
 - `gcloud auth configure-docker gcr.io`
 
+### authentication with firebase
+- `gcloud auth application-default login`
 
